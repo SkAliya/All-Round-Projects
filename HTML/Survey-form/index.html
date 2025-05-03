@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aliya Shaik" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Survey Form 🧾</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name">Name: &#160;</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          maxlength="5"
+          autocomplete="on"
+          required
+        />
+        <br />
+        <br />
+        <label for="email">Email: &nbsp;</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          autocomplete="on"
+          required
+        />
+        <br />
+        <br />
+        <label for="age">Age: &nbsp;</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" />
+        <br />
+        <br />
+        <label for="dob">Your DOB: &nbsp;</label>
+        <input type="datetime-local" id="dob" />
+        <br />
+        <br />
+        <label for="about"> Which option best describes you: &nbsp;</label>
+        <select name="about">
+          <option value="student">Student</option>
+          <option value="student">Employee</option>
+          <option value="student">Senior Citizen</option>
+        </select>
+        <br />
+        <br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+
+        <fieldset>
+          <legend>&nbsp; Languages or Frameworks you know: &nbsp;</legend>
+          <input type="checkbox" name="html" id="html" value="html" />
+          <label for="html">HTML5</label>
+          <br />
+          <input type="checkbox" name="css" id="css" value="css" />
+          <label for="css">CSS3</label>
+          <br />
+          <input type="checkbox" name="js" id="js" value="js" />
+          <label for="js">Javascript</label>
+          <br />
+          <input type="checkbox" name="react" id="react" value="react" />
+          <label for="react">React</label>
+          <br />
+          <input type="checkbox" name="node" id="node" value="node" />
+          <label for="node">Node.js</label>
+          <br />
+          <input type="checkbox" name="express" id="express" value="express" />
+          <label for="express">Express.js</label>
+        </fieldset>
+        <br />
+        <label for="dishes">Your Fav Foods: &nbsp;</label>
+        <select id="dishes">
+          <optgroup label="Non-veg">
+            <option>Chicken Fry</option>
+            <option>Prawns Curry</option>
+            <option>Biryani</option>
+          </optgroup>
+          <optgroup label="Veg">
+            <option>Veg Biryani</option>
+            <option>Chickpea Curry</option>
+            <option>Paneer Korma</option>
+          </optgroup>
+        </select>
+        <input type="text" list="foods" />
+        <datalist id="foods">
+          <option>Chicken Fry</option>
+          <option>Prawns Curry</option>
+          <option>Biryani</option>
+
+          <option>Veg Biryani</option>
+          <option>Chickpea Curry</option>
+          <option>Paneer Korma</option>
+        </datalist>
+        <br />
+        <p>
+          <label for="ph">Your Phone No: &nbsp;</label>
+          <input
+            type="tel"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}"
+            placeholder="Phone number"
+            maxlength="10"
+          />
+        </p>
+        <p>
+          <label for="address">Address:</label>
+        </p>
+        <textarea rows="10" cols="50" placeholder="Your address"></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
